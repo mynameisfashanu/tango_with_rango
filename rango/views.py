@@ -3,12 +3,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse(
-    """
-    Hello world <br>
-    <a href='about/'>about page</a>
-    """
-    )
+    return render(request,'rango/index.html',{'boldmessage' : "I am cool"})
 
 def about(request):
     return HttpResponse("""Rango says here is the about page""")
