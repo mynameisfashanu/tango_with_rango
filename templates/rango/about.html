@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <title> About Page</title>
+    </head>
+    <h1>This is an about page</h1>
+    <div>
+        <p>We love about pages</p>
+        <strong>{{ message }}</strong>
+    </div>
+
+    <div>
+        <img src="{{ MEDIA_URL }}cat.jpg/" alt="This is a cat">
+    </div>
+</html>

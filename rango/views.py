@@ -6,4 +6,4 @@ def index(request):
     return render(request,'rango/index.html',{'boldmessage' : "I am cool"})
 
 def about(request):
-    return HttpResponse("""Rango says here is the about page""")
+    return render(request,'rango/about.html',{'message' : 'We love you!'})
